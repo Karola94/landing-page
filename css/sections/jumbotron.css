@@ -1,0 +1,92 @@
+.tint {
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  height: 100%;
+  background-color: #000;
+  opacity: 0.5;
+}
+
+.jumbo-container {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  z-index: 2;
+  height: 100%;
+}
+
+.jumbo-container .header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-self: center;
+  margin-top: 3%;
+}
+
+.jumbo-container .header .logo {
+  color: #fed136;
+  font-family: 'Pinyon Script', cursive;
+  font-weight: 400;
+  font-size: 46px;
+}
+
+.jumbo-container .header .menu {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.jumbo-container .header .menu a {
+  color: #fff;
+  font-weight: 500;
+  font-size: 20px;
+  padding: 0 20px;
+  text-decoration: none;
+  line-height: 58px;
+  transition: background-color 0.5s ease;
+}
+
+.jumbo-container .header .menu a:hover {
+  background: rgba(0, 0, 0, 0.5);
+  color: #d9d9d9;
+  border-radius: 3%;
+}
+
+.jumbo-container .welcome {
+  color: white;
+  font-family: 'Merriweather', serif;
+  font-size: 40px;
+  font-style: italic;
+  text-align: center;
+  margin-top: 15%;
+}
+
+.jumbo-container .nice {
+  color: white;
+  font-size: 75px;
+  font-weight: 700;
+  text-align: center;
+  margin-top: 3%;
+}
+
+.jumbo-container .jumbo-button {
+  color: white;
+  font-size: 18px;
+  font-weight: 700;
+  padding: 25px 50px;
+  text-align: center;
+  max-width: 160px;
+  background-color: #fed136;
+  border-radius: 3%;
+  cursor: pointer;
+  align-self: center;
+  margin-top: 5%;
+  transition: background-color 0.5s ease;
+}
+
+.jumbo-container .jumbo-button:hover {
+  background: rgba(254, 209, 54, 0.5);
+}
+
+/*# sourceMappingURL=jumbotron.css.map */
