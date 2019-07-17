@@ -1,0 +1,8 @@
+@import "mixins.scss";
+
+body {
+    @include column-display;
+    box-sizing: border-box;
+    background-color: white;
+    width: 100%;    
+}
