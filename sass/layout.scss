@@ -2,7 +2,7 @@
 @import "mixins.scss";
 
 body {
-    @include column-display;
+   @include column-display;
     box-sizing: border-box;
     background-color: white;
     margin: 0;
@@ -17,7 +17,20 @@ body {
         background-repeat: no-repeat;
         background-size: 100%;
     }
-
+    .services {
+        @include column-display;    
+        text-align: center;
+        padding: 120px 0;
+    }
+    .portfolio {
+        @include column-display;    
+        background-color: #f7f7f7;
+        padding: 120px 0;
+    }
+    .about {
+        @include column-display;        
+        padding: 120px 0;        
+    }
 
     .col-1 { width: 8.33%; }      
     .col-2 { width: 16.66%; }      

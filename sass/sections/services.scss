@@ -1,26 +1,14 @@
 @import "../mixins.scss";
 
-.services {
-    @include column-display;    
-    text-align: center;
-
     .services-h1 {
-        color: #222222;
-        font-size: 40px;
-        font-weight: 700;
-        line-height: 75px;
-        margin-top: 120px;
+        @include section-h1;        
     }
     .services-h2 {
-        color: #777777;
-        font-family: 'Merriweather', serif; 
-        font-weight: 700;
-        font-size: 16px;
-        font-style: italic;
+        @include section-h2;
     }
     .services-row {
         @include row-display;
-        margin: 120px 0;
+        margin-top: 120px;
         align-self: center;
         justify-content: space-around;
 
@@ -36,6 +24,12 @@
                 border-radius: 50%;
                 border: 3px solid #fed136;
                 align-self: center;
+
+                &:hover {
+                    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+                    cursor: pointer;
+                    border-color: #fcc400;
+                }                
             }
             .title {
                 color: #222222;
@@ -43,6 +37,10 @@
                 font-weight: 700;
                 line-height: 75px;
                 margin: 0;
+
+                &:hover {
+                    cursor: pointer;
+                }
             }
             .services-desc {
                 color: #777777;
@@ -52,4 +50,3 @@
             }
         }
     }
-}

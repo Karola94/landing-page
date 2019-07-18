@@ -1,0 +1,123 @@
+.about-h1 {
+  color: #222222;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 75px;
+  text-align: center;
+}
+
+.about-h2 {
+  color: #777777;
+  font-size: 16px;
+  font-style: italic;
+  font-family: 'Merriweather', serif;
+  text-align: center;
+  margin-bottom: 26px;
+}
+
+.about-container {
+  display: flex;
+  flex-direction: column;
+  margin-top: 84px;
+  min-height: 500px;
+}
+
+.about-container .about-row {
+  position: relative;
+  height: 184px;
+}
+
+.about-container .about-row .about-desc {
+  position: absolute;
+  top: 0;
+  display: flex;
+  flex-direction: column;
+  max-width: 33.33%;
+  height: 184px;
+}
+
+.about-container .about-row .about-desc .desc-h1 {
+  color: #222222;
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 17px;
+}
+
+.about-container .about-row .about-desc .desc-text {
+  color: #777777;
+  font-family: 'Roboto Slab', serif;
+  font-size: 14px;
+  font-weight: 400;
+  max-width: 50%;
+  overflow: auto;
+}
+
+.about-container .about-row .about-desc .end {
+  align-self: flex-end;
+}
+
+.about-container .about-row .left {
+  transform: translateX(-170px);
+  right: 50%;
+  text-align: right;
+}
+
+.about-container .about-row .right {
+  transform: translateX(170px);
+  left: 50%;
+  text-align: left;
+}
+
+.about-container .about-row .about-img {
+  position: absolute;
+  top: 0;
+  transform: translateX(50%);
+  right: 50%;
+  width: 170px;
+  height: 170px;
+  border-radius: 50%;
+  border: 7px solid #f1f1f1;
+}
+
+.about-container .about-row-con {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  height: 93px;
+}
+
+.about-container .about-row-con .connector {
+  width: 1px;
+  height: 93px;
+  border: 1px solid #f1f1f1;
+  background-color: #f1f1f1;
+}
+
+.about-container .last {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.about-container .last .story {
+  display: flex;
+  flex-direction: column;
+  width: 170px;
+  height: 170px;
+  border-radius: 50%;
+  border: 7px solid #f1f1f1;
+  background-color: #fed136;
+  align-items: center;
+  justify-content: center;
+}
+
+.about-container .last .story p {
+  text-align: center;
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.7);
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: 700;
+  margin: 5px 0;
+}
+
+/*# sourceMappingURL=about_us.css.map */

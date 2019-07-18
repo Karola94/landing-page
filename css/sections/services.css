@@ -1,15 +1,17 @@
-.services { display: flex; flex-direction: column; text-align: center; }
+.services-h1 { color: #222222; font-size: 40px; font-weight: 700; line-height: 75px; text-align: center; }
 
-.services .services-h1 { color: #222222; font-size: 40px; font-weight: 700; line-height: 75px; margin-top: 120px; }
+.services-h2 { color: #777777; font-size: 16px; font-style: italic; font-family: 'Merriweather', serif; text-align: center; margin-bottom: 26px; }
 
-.services .services-h2 { color: #777777; font-family: 'Merriweather', serif; font-weight: 700; font-size: 16px; font-style: italic; }
+.services-row { display: flex; flex-direction: row; margin-top: 120px; align-self: center; justify-content: space-around; }
 
-.services .services-row { display: flex; flex-direction: row; margin: 120px 0; align-self: center; justify-content: space-around; }
+.services-row .services-col { display: flex; flex-direction: column; }
 
-.services .services-row .services-col { display: flex; flex-direction: column; }
+.services-row .services-col .services-pic { display: flex; align-items: center; justify-content: center; width: 68px; height: 68px; border-radius: 50%; border: 3px solid #fed136; align-self: center; }
 
-.services .services-row .services-col .services-pic { display: flex; align-items: center; justify-content: center; width: 68px; height: 68px; border-radius: 50%; border: 3px solid #fed136; align-self: center; }
+.services-row .services-col .services-pic:hover { box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); cursor: pointer; border-color: #fcc400; }
 
-.services .services-row .services-col .title { color: #222222; font-size: 18px; font-weight: 700; line-height: 75px; margin: 0; }
+.services-row .services-col .title { color: #222222; font-size: 18px; font-weight: 700; line-height: 75px; margin: 0; }
 
-.services .services-row .services-col .services-desc { color: #777777; font-size: 14px; font-weight: 400; font-family: 'Roboto Slab', serif; }
+.services-row .services-col .title:hover { cursor: pointer; }
+
+.services-row .services-col .services-desc { color: #777777; font-size: 14px; font-weight: 400; font-family: 'Roboto Slab', serif; }

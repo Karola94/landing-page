@@ -1,68 +1,15 @@
-.portfolio {
-  display: flex;
-  flex-direction: column;
-  background-color: #f7f7f7;
-  padding: 120px 0;
-}
+.portfolio-h1 { color: #222222; font-size: 40px; font-weight: 700; line-height: 75px; text-align: center; }
 
-.portfolio .portfolio-h1 {
-  color: #222222;
-  font-size: 40px;
-  font-weight: 700;
-  line-height: 75px;
-  text-align: center;
-}
+.portfolio-h2 { color: #777777; font-size: 16px; font-style: italic; font-family: 'Merriweather', serif; text-align: center; margin-bottom: 26px; }
 
-.portfolio .portfolio-h2 {
-  color: #777777;
-  font-size: 16px;
-  font-style: italic;
-  font-family: 'Merriweather', serif;
-  text-align: center;
-  margin-bottom: 26px;
-}
+.portfolio-row { display: flex; flex-direction: row; justify-content: space-around; align-self: center; margin-top: 50px; }
 
-.portfolio .portfolio-row {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  align-self: center;
-  margin-top: 50px;
-}
+.portfolio-row .portfolio-col { display: flex; flex-direction: column; background-color: white; transition: background-color 0.5s ease; }
 
-.portfolio .portfolio-row .portfolio-col {
-  display: flex;
-  flex-direction: column;
-  background-color: white;
-  transition: background-color 0.5s ease;
-}
+.portfolio-row .portfolio-col:hover { box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); cursor: pointer; background: rgba(0, 0, 0, 0.1); }
 
-.portfolio .portfolio-row .portfolio-col:hover {
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  cursor: pointer;
-  background: rgba(0, 0, 0, 0.1);
-}
+.portfolio-row .portfolio-col img { width: 291px; height: 300px; }
 
-.portfolio .portfolio-row .portfolio-col img {
-  width: 291px;
-  height: 300px;
-}
+.portfolio-row .portfolio-col .portfolio-title { color: #333333; font-size: 18px; font-weight: 700; text-align: center; margin-top: 29px; }
 
-.portfolio .portfolio-row .portfolio-col .portfolio-title {
-  color: #333333;
-  font-size: 18px;
-  font-weight: 700;
-  text-align: center;
-  margin-top: 29px;
-}
-
-.portfolio .portfolio-row .portfolio-col .portfolio-subtitle {
-  color: #737373;
-  font-size: 14px;
-  font-style: italic;
-  font-family: 'Merriweather', serif;
-  text-align: center;
-  margin-bottom: 29px;
-}
-
-/*# sourceMappingURL=portfolio.css.map */
+.portfolio-row .portfolio-col .portfolio-subtitle { color: #737373; font-size: 14px; font-style: italic; font-family: 'Merriweather', serif; text-align: center; margin-bottom: 29px; }
