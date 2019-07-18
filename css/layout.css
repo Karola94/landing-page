@@ -53,6 +53,14 @@ body .sponsors {
   padding: 61px 0;
 }
 
+body .contact {
+  display: flex;
+  flex-direction: column;
+  padding: 110px 0;
+  background: url("../images/contact-section.png");
+  background-size: cover;
+}
+
 body .col-1 {
   width: 8.33%;
 }

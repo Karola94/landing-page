@@ -1,0 +1,56 @@
+@import "../mixins.scss";
+
+.contact-h1 {
+    @include section-h1;
+    color: white;
+}
+.contact-h2 {
+    @include section-h2;
+}
+.contact-row {
+    @include row-display;
+    justify-content: center;    
+
+    .contact-inputs {
+        @include column-display;        
+        margin-right: 30px;
+
+        input {
+            width: 455px;
+            height: 50px;
+            border: 1px solid #cccccc;            
+            border-radius: 3px;
+            margin-bottom: 29px;
+        }
+    }
+    .contact-textfield {
+       
+
+        textarea {
+            width: 455px;
+            height: 216px;
+            border: 1px solid #cccccc;            
+            border-radius: 3px;
+        }        
+    }
+}
+.contact-button {
+    @include row-display;
+    height: 66px;
+    padding: 0 30px;
+    background-color: #fed136;
+    text-align: center;
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: 700;
+    border-radius: 3px;
+    align-self: center;
+    align-items: center;
+    transition: background-color 0.5s ease, box-shadow 0.3s ease;
+
+    &:hover {
+        cursor: pointer;
+        box-shadow: 0 0 10px rgba(254, 209, 54, 0.9);
+        background: rgba(254, 209, 54, 0.7);
+    }
+}
