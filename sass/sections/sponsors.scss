@@ -8,3 +8,15 @@
         margin: 0 20px;
     }
 }
+@media (max-width:974px) {
+    .sponsors-row {
+        @include column-display;
+        align-self: center;
+
+        img {
+            max-width: 200px;
+            align-self: center;
+            margin: 20px 0;
+        }
+    }
+}

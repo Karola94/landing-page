@@ -43,6 +43,32 @@
   border-radius: 3px;
 }
 
+@media (max-width: 974px) {
+  .contact-row {
+    display: flex;
+    flex-direction: column;
+  }
+  .contact-row .contact-inputs {
+    align-self: center;
+    margin-right: 0;
+  }
+  .contact-row .contact-textfield {
+    align-self: center;
+    margin-bottom: 29px;
+  }
+}
+
+@media (max-width: 483px) {
+  .contact-row input {
+    width: 200px;
+    height: 25px;
+  }
+  .contact-row textarea {
+    width: 200px;
+    height: 108px;
+  }
+}
+
 .contact-button {
   display: flex;
   flex-direction: row;
@@ -63,6 +89,14 @@
   cursor: pointer;
   box-shadow: 0 0 10px rgba(254, 209, 54, 0.9);
   background: rgba(254, 209, 54, 0.7);
+}
+
+@media (max-width: 483px) {
+  .contact-button {
+    height: 33px;
+    padding: 0 10px;
+    font-size: 8px;
+  }
 }
 
 /*# sourceMappingURL=contact.css.map */

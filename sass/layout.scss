@@ -44,6 +44,17 @@ body {
         background: url('../images/contact-section.png');
         background-size: cover;
     }
+    .footer {
+        height: 100px;
+        position: relative;
+
+        @media (max-width:974px) {
+            display: flex;
+            flex-direction: column-reverse;
+            height: auto;
+            padding-top: 20px;
+        }
+    }
 
     .col-1 { width: 8.33%; }      
     .col-2 { width: 16.66%; }      

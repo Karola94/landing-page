@@ -23,8 +23,7 @@
             margin-bottom: 29px;
         }
     }
-    .contact-textfield {
-       
+    .contact-textfield {      
 
         textarea {
             width: 455px;
@@ -32,6 +31,30 @@
             border: 1px solid #cccccc;            
             border-radius: 3px;
         }        
+    }
+
+    @media (max-width:974px) {
+        @include column-display;
+
+        .contact-inputs {
+            align-self: center;
+            margin-right: 0;
+        }
+        .contact-textfield {
+            align-self: center;
+            margin-bottom: 29px;
+        }
+    }
+
+    @media (max-width:483px) {
+        input {
+            width: 200px;
+            height: 25px;
+        }
+        textarea {
+            width: 200px;
+            height: 108px;
+        }
     }
 }
 .contact-button {
@@ -52,5 +75,11 @@
         cursor: pointer;
         box-shadow: 0 0 10px rgba(254, 209, 54, 0.9);
         background: rgba(254, 209, 54, 0.7);
+    }
+
+    @media (max-width:483px) {
+        height: 33px;
+        padding: 0 10px;
+        font-size: 8px;
     }
 }

@@ -53,10 +53,20 @@
             }
         }
     }
+
+    @media (max-width:974px) {        
+        @include column-display;
+
+        .team-column {
+            align-self: center;
+        }
+        
+    }
 }
 .team-desc {
     color: #777777;
     font-size: 16px;
     font-weight: 400;
     font-family: 'Roboto Slab', serif;
+    padding: 0 30px;
 }

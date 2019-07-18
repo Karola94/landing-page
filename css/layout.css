@@ -61,6 +61,20 @@ body .contact {
   background-size: cover;
 }
 
+body .footer {
+  height: 100px;
+  position: relative;
+}
+
+@media (max-width: 974px) {
+  body .footer {
+    display: flex;
+    flex-direction: column-reverse;
+    height: auto;
+    padding-top: 20px;
+  }
+}
+
 body .col-1 {
   width: 8.33%;
 }
