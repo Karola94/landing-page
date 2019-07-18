@@ -46,6 +46,13 @@ body .team {
   text-align: center;
 }
 
+body .sponsors {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding: 61px 0;
+}
+
 body .col-1 {
   width: 8.33%;
 }

@@ -1,0 +1,10 @@
+{
+	"version": 3,
+	"file": "sponsors.css",
+	"sources": [
+		"../../sass/sections/sponsors.scss",
+		"../../sass/mixins.scss"
+	],
+	"names": [],
+	"mappings": "AAEA,AAAA,aAAa,CAAC;ECGV,OAAO,EAAE,IAAI;EACb,cAAc,EAAE,GAAG;EDFnB,eAAe,EAAE,MAAM;CAK1B;;AAPD,AAII,aAJS,CAIT,GAAG,CAAC;EACA,MAAM,EAAE,MAAM;CACjB"
+}

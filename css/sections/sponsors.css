@@ -1,0 +1,11 @@
+.sponsors-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.sponsors-row img {
+  margin: 0 20px;
+}
+
+/*# sourceMappingURL=sponsors.css.map */

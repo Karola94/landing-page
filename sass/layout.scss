@@ -33,6 +33,11 @@ body {
         background-color: #f9f9f9; 
         text-align: center;        
     }
+    .sponsors {
+        @include row-display;
+        justify-content: center;
+        padding: 61px 0;
+    }
 
     .col-1 { width: 8.33%; }      
     .col-2 { width: 16.66%; }      
