@@ -1,62 +1,15 @@
-.services {
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-}
+.services { display: flex; flex-direction: column; text-align: center; }
 
-.services .services-h1 {
-  color: #222222;
-  font-size: 40px;
-  font-weight: 700;
-  line-height: 75px;
-  margin-top: 120px;
-}
+.services .services-h1 { color: #222222; font-size: 40px; font-weight: 700; line-height: 75px; margin-top: 120px; }
 
-.services .services-h2 {
-  color: #777777;
-  font-family: 'Merriweather', serif;
-  font-weight: 700;
-  font-size: 16px;
-  font-style: italic;
-}
+.services .services-h2 { color: #777777; font-family: 'Merriweather', serif; font-weight: 700; font-size: 16px; font-style: italic; }
 
-.services .services-row {
-  display: flex;
-  flex-direction: row;
-  margin: 120px 0;
-  align-self: center;
-  justify-content: space-around;
-}
+.services .services-row { display: flex; flex-direction: row; margin: 120px 0; align-self: center; justify-content: space-around; }
 
-.services .services-row .services-col {
-  display: flex;
-  flex-direction: column;
-}
+.services .services-row .services-col { display: flex; flex-direction: column; }
 
-.services .services-row .services-col .services-pic {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 68px;
-  height: 68px;
-  border-radius: 50%;
-  border: 3px solid #fed136;
-  align-self: center;
-}
+.services .services-row .services-col .services-pic { display: flex; align-items: center; justify-content: center; width: 68px; height: 68px; border-radius: 50%; border: 3px solid #fed136; align-self: center; }
 
-.services .services-row .services-col .title {
-  color: #222222;
-  font-size: 18px;
-  font-weight: 700;
-  line-height: 75px;
-  margin: 0;
-}
+.services .services-row .services-col .title { color: #222222; font-size: 18px; font-weight: 700; line-height: 75px; margin: 0; }
 
-.services .services-row .services-col .services-desc {
-  color: #777777;
-  font-size: 14px;
-  font-weight: 400;
-  font-family: 'Roboto Slab', serif;
-}
-
-/*# sourceMappingURL=services.css.map */
+.services .services-row .services-col .services-desc { color: #777777; font-size: 14px; font-weight: 400; font-family: 'Roboto Slab', serif; }
