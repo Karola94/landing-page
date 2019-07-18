@@ -1,0 +1,62 @@
+@import "../mixins.scss";
+
+.team-h1 {
+    @include section-h1;
+}
+.team-h2 {
+    @include section-h2;
+    margin-bottom: 83px;
+}
+
+.team-row {
+    @include row-display;
+    justify-content: center;
+
+    .team-column {
+        @include column-display;
+        padding: 50px;
+
+        .team-img {
+            width: 220px;
+            height: 220px;
+            background-color: #111111;
+            border: 7px solid #ffffff;
+            border-radius: 50%;
+        }
+        .name {
+            color: #222222;            
+            font-size: 16px;
+            font-weight: 700;            
+            line-height: 50px;
+        }
+        .position {
+            font-size: 14px;
+            color: #777777;
+            font-family: 'Roboto Slab', serif;
+            font-weight: 400;
+            margin-bottom: 14px;
+        }
+        .social-media {
+            @include row-display;
+            justify-content: center;
+
+            .social {
+                @include row-display;
+                justify-content: center;
+                align-items: center;
+                width: 41px;
+                height: 41px;
+                border: 3px solid #222222;
+                background-color: #f9f9f9;
+                border-radius: 50%;
+                margin: 0 5px;
+            }
+        }
+    }
+}
+.team-desc {
+    color: #777777;
+    font-size: 16px;
+    font-weight: 400;
+    font-family: 'Roboto Slab', serif;
+}

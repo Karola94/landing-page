@@ -21,3 +21,7 @@
     text-align: center;
     margin-bottom: 26px;
 }
+@mixin sections-settings {
+    @include column-display;        
+    padding: 120px 0; 
+}

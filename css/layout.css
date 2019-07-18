@@ -21,21 +21,29 @@ body .jumbotron {
 body .services {
   display: flex;
   flex-direction: column;
-  text-align: center;
   padding: 120px 0;
+  text-align: center;
 }
 
 body .portfolio {
   display: flex;
   flex-direction: column;
-  background-color: #f7f7f7;
   padding: 120px 0;
+  background-color: #f7f7f7;
 }
 
 body .about {
   display: flex;
   flex-direction: column;
   padding: 120px 0;
+}
+
+body .team {
+  display: flex;
+  flex-direction: column;
+  padding: 120px 0;
+  background-color: #f9f9f9;
+  text-align: center;
 }
 
 body .col-1 {

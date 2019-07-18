@@ -18,18 +18,20 @@ body {
         background-size: 100%;
     }
     .services {
-        @include column-display;    
-        text-align: center;
-        padding: 120px 0;
+        @include sections-settings;    
+        text-align: center;        
     }
     .portfolio {
-        @include column-display;    
-        background-color: #f7f7f7;
-        padding: 120px 0;
+        @include sections-settings;    
+        background-color: #f7f7f7;       
     }
     .about {
-        @include column-display;        
-        padding: 120px 0;        
+        @include sections-settings;                
+    }
+    .team {
+        @include sections-settings;
+        background-color: #f9f9f9; 
+        text-align: center;        
     }
 
     .col-1 { width: 8.33%; }      
