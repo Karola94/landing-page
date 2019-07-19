@@ -1,102 +1,24 @@
-.contact-h1 {
-  color: #222222;
-  font-size: 40px;
-  font-weight: 700;
-  line-height: 75px;
-  text-align: center;
-  color: white;
-}
+.contact-h1 { color: #222222; font-size: 40px; font-weight: 700; line-height: 75px; text-align: center; color: white; }
 
-.contact-h2 {
-  color: #777777;
-  font-size: 16px;
-  font-style: italic;
-  font-family: 'Merriweather', serif;
-  text-align: center;
-  margin-bottom: 26px;
-}
+.contact-h2 { color: #777777; font-size: 16px; font-style: italic; font-family: 'Merriweather', serif; text-align: center; margin-bottom: 26px; }
 
-.contact-row {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-}
+.contact-row { display: flex; flex-direction: row; justify-content: center; }
 
-.contact-row .contact-inputs {
-  display: flex;
-  flex-direction: column;
-  margin-right: 30px;
-}
+.contact-row .contact-inputs { display: flex; flex-direction: column; margin-right: 30px; }
 
-.contact-row .contact-inputs input {
-  width: 455px;
-  height: 50px;
-  border: 1px solid #cccccc;
-  border-radius: 3px;
-  margin-bottom: 29px;
-}
+.contact-row .contact-inputs input { width: 455px; height: 50px; border: 1px solid #cccccc; border-radius: 3px; margin-bottom: 29px; }
 
-.contact-row .contact-textfield textarea {
-  width: 455px;
-  height: 216px;
-  border: 1px solid #cccccc;
-  border-radius: 3px;
-}
+.contact-row .contact-textfield textarea { width: 455px; height: 216px; border: 1px solid #cccccc; border-radius: 3px; }
 
-@media (max-width: 974px) {
-  .contact-row {
-    display: flex;
-    flex-direction: column;
-  }
-  .contact-row .contact-inputs {
-    align-self: center;
-    margin-right: 0;
-  }
-  .contact-row .contact-textfield {
-    align-self: center;
-    margin-bottom: 29px;
-  }
-}
+@media (max-width: 974px) { .contact-row { display: flex; flex-direction: column; }
+  .contact-row .contact-inputs { align-self: center; margin-right: 0; }
+  .contact-row .contact-textfield { align-self: center; margin-bottom: 29px; } }
 
-@media (max-width: 483px) {
-  .contact-row input {
-    width: 200px;
-    height: 25px;
-  }
-  .contact-row textarea {
-    width: 200px;
-    height: 108px;
-  }
-}
+@media (max-width: 483px) { .contact-row input { width: 200px; height: 25px; }
+  .contact-row textarea { width: 200px; height: 108px; } }
 
-.contact-button {
-  display: flex;
-  flex-direction: row;
-  height: 66px;
-  padding: 0 30px;
-  background-color: #fed136;
-  text-align: center;
-  color: #ffffff;
-  font-size: 18px;
-  font-weight: 700;
-  border-radius: 3px;
-  align-self: center;
-  align-items: center;
-  transition: background-color 0.5s ease, box-shadow 0.3s ease;
-}
+.contact-button { display: flex; flex-direction: row; height: 66px; padding: 0 30px; background-color: #fed136; text-align: center; color: #ffffff; font-size: 18px; font-weight: 700; border-radius: 3px; align-self: center; align-items: center; transition: background-color 0.5s ease, box-shadow 0.3s ease; }
 
-.contact-button:hover {
-  cursor: pointer;
-  box-shadow: 0 0 10px rgba(254, 209, 54, 0.9);
-  background: rgba(254, 209, 54, 0.7);
-}
+.contact-button:hover { cursor: pointer; box-shadow: 0 0 10px rgba(254, 209, 54, 0.9); background: rgba(254, 209, 54, 0.7); }
 
-@media (max-width: 483px) {
-  .contact-button {
-    height: 33px;
-    padding: 0 10px;
-    font-size: 8px;
-  }
-}
-
-/*# sourceMappingURL=contact.css.map */
+@media (max-width: 483px) { .contact-button { height: 33px; padding: 0 10px; font-size: 8px; } }

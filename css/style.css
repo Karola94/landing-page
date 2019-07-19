@@ -242,6 +242,7 @@ body .col-12 {
 .services-row .services-col {
   display: flex;
   flex-direction: column;
+  min-width: 200px;
 }
 
 .services-row .services-col .services-pic {
@@ -267,6 +268,7 @@ body .col-12 {
   font-weight: 700;
   line-height: 75px;
   margin: 0;
+  min-width: 200px;
 }
 
 .services-row .services-col .title:hover {
@@ -278,6 +280,20 @@ body .col-12 {
   font-size: 14px;
   font-weight: 400;
   font-family: 'Roboto Slab', serif;
+}
+
+@media (max-width: 754px) {
+  .services-row {
+    display: flex;
+    flex-direction: column;
+  }
+  .services-row .services-col {
+    align-self: center;
+    margin-bottom: 50px;
+  }
+  .services-row .services-col:last-child {
+    margin-bottom: 0;
+  }
 }
 
 .portfolio-h1 {
@@ -338,6 +354,18 @@ body .col-12 {
   font-family: 'Merriweather', serif;
   text-align: center;
   margin-bottom: 29px;
+}
+
+@media (max-width: 974px) {
+  .portfolio-row {
+    display: flex;
+    flex-direction: column;
+    margin-top: 0;
+  }
+  .portfolio-row .portfolio-col {
+    align-self: center;
+    margin-bottom: 20px;
+  }
 }
 
 .about-h1 {

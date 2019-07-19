@@ -13,7 +13,8 @@
         justify-content: space-around;
 
         .services-col {
-            @include column-display;            
+            @include column-display; 
+            min-width: 200px;           
 
             .services-pic {
                 display: flex;
@@ -37,6 +38,7 @@
                 font-weight: 700;
                 line-height: 75px;
                 margin: 0;
+                min-width: 200px;
 
                 &:hover {
                     cursor: pointer;
@@ -47,6 +49,18 @@
                 font-size: 14px;
                 font-weight: 400;
                 font-family: 'Roboto Slab', serif;
+            }
+        }
+
+        @media (max-width:754px) {        
+            @include column-display;
+    
+            .services-col {
+                align-self: center;
+                margin-bottom: 50px;
+            }
+            .services-col:last-child {
+                margin-bottom: 0;
             }
         }
     }

@@ -43,4 +43,14 @@
                 margin-bottom: 29px;
             }
         }
+
+        @media (max-width:974px) {        
+            @include column-display;
+            margin-top: 0;
+    
+            .portfolio-col {
+                align-self: center;
+                margin-bottom: 20px;
+            }
+        }
     }    
