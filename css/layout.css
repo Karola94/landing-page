@@ -1,126 +1,44 @@
 @import url("https://fonts.googleapis.com/css?family=Merriweather:300,300i,400,400i,700,700i,900,900i|Montserrat:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i|Pinyon+Script|Roboto+Slab:100,300,400,700&display=swap");
-body {
-  display: flex;
-  flex-direction: column;
-  box-sizing: border-box;
-  background-color: white;
-  margin: 0;
-  padding: 0;
-  width: 100%;
-  font-family: 'Montserrat', sans-serif;
-}
+body { display: flex; flex-direction: column; box-sizing: border-box; background-color: white; margin: 0; padding: 0; width: 100%; font-family: 'Montserrat', sans-serif; }
 
-body .jumbotron {
-  position: relative;
-  background: url("../images/Background_Image.png");
-  min-height: 1000px;
-  background-repeat: no-repeat;
-  background-size: 100%;
-}
+body .jumbotron { position: relative; background: url("../images/Background_Image.png"); min-height: 1000px; background-repeat: no-repeat; background-size: 100%; }
 
-body .services {
-  display: flex;
-  flex-direction: column;
-  padding: 120px 0;
-  text-align: center;
-}
+body .services { display: flex; flex-direction: column; padding: 120px 0; text-align: center; }
 
-body .portfolio {
-  display: flex;
-  flex-direction: column;
-  padding: 120px 0;
-  background-color: #f7f7f7;
-}
+body .portfolio { display: flex; flex-direction: column; padding: 120px 0; background-color: #f7f7f7; }
 
-body .about {
-  display: flex;
-  flex-direction: column;
-  padding: 120px 0;
-}
+body .about { display: flex; flex-direction: column; padding: 120px 0; }
 
-body .team {
-  display: flex;
-  flex-direction: column;
-  padding: 120px 0;
-  background-color: #f9f9f9;
-  text-align: center;
-}
+body .team { display: flex; flex-direction: column; padding: 120px 0; background-color: #f9f9f9; text-align: center; }
 
-body .sponsors {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  padding: 61px 0;
-}
+body .sponsors { display: flex; flex-direction: row; justify-content: center; padding: 61px 0; }
 
-body .contact {
-  display: flex;
-  flex-direction: column;
-  padding: 110px 0;
-  background: url("../images/contact-section.png");
-  background-size: cover;
-}
+body .contact { display: flex; flex-direction: column; padding: 110px 0; background: url("../images/contact-section.png"); background-size: cover; }
 
-body .footer {
-  height: 100px;
-  position: relative;
-}
+body .footer { height: 100px; position: relative; }
 
-@media (max-width: 974px) {
-  body .footer {
-    display: flex;
-    flex-direction: column-reverse;
-    height: auto;
-    padding-top: 20px;
-  }
-}
+@media (max-width: 974px) { body .footer { display: flex; flex-direction: column-reverse; height: auto; padding-top: 20px; } }
 
-body .col-1 {
-  width: 8.33%;
-}
+body .col-1 { width: 8.33%; }
 
-body .col-2 {
-  width: 16.66%;
-}
+body .col-2 { width: 16.66%; }
 
-body .col-3 {
-  width: 25%;
-}
+body .col-3 { width: 25%; }
 
-body .col-4 {
-  width: 33.33%;
-}
+body .col-4 { width: 33.33%; }
 
-body .col-5 {
-  width: 41.66%;
-}
+body .col-5 { width: 41.66%; }
 
-body .col-6 {
-  width: 50%;
-}
+body .col-6 { width: 50%; }
 
-body .col-7 {
-  width: 58.33%;
-}
+body .col-7 { width: 58.33%; }
 
-body .col-8 {
-  width: 66.66%;
-}
+body .col-8 { width: 66.66%; }
 
-body .col-9 {
-  width: 75%;
-}
+body .col-9 { width: 75%; }
 
-body .col-10 {
-  width: 83.33%;
-}
+body .col-10 { width: 83.33%; }
 
-body .col-11 {
-  width: 91.66%;
-}
+body .col-11 { width: 91.66%; }
 
-body .col-12 {
-  width: 100%;
-}
-
-/*# sourceMappingURL=layout.css.map */
+body .col-12 { width: 100%; }

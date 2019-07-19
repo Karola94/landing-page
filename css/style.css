@@ -422,6 +422,30 @@ body .col-12 {
   overflow: auto;
 }
 
+@media (min-width: 1480px) and (max-width: 1772px) {
+  .about-container .about-row .about-desc .desc-text {
+    max-width: 60%;
+  }
+}
+
+@media (min-width: 1271px) and (max-width: 1480px) {
+  .about-container .about-row .about-desc .desc-text {
+    max-width: 70%;
+  }
+}
+
+@media (min-width: 1114px) and (max-width: 1271px) {
+  .about-container .about-row .about-desc .desc-text {
+    max-width: 80%;
+  }
+}
+
+@media (max-width: 1114px) {
+  .about-container .about-row .about-desc .desc-text {
+    max-width: 90%;
+  }
+}
+
 .about-container .about-row .about-desc .end {
   align-self: flex-end;
 }
@@ -488,6 +512,54 @@ body .col-12 {
   font-size: 18px;
   font-weight: 700;
   margin: 5px 0;
+}
+
+@media (max-width: 990px) {
+  .about-container {
+    display: flex;
+    flex-direction: column;
+  }
+  .about-container .about-row {
+    display: flex;
+    flex-direction: column;
+    width: auto;
+    align-self: center;
+    height: auto;
+  }
+  .about-container .about-row .about-desc {
+    position: unset;
+    transform: none;
+    align-self: center;
+    max-width: 70%;
+    height: auto;
+  }
+  .about-container .about-row .about-desc .desc-h1 {
+    align-self: center;
+  }
+  .about-container .about-row .about-desc .desc-text {
+    align-self: center;
+  }
+  .about-container .about-row .left {
+    text-align: center;
+  }
+  .about-container .about-row .right {
+    text-align: center;
+  }
+  .about-container .about-row .about-img {
+    position: unset;
+    transform: none;
+    align-self: center;
+    margin-bottom: 10px;
+  }
+  .about-container .reverse {
+    flex-direction: column-reverse;
+  }
+  .about-container .about-row-con {
+    align-items: center;
+  }
+  .about-container .about-row-con .connector {
+    height: 73px;
+  }
 }
 
 .team-h1 {

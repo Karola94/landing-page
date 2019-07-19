@@ -35,7 +35,20 @@
                 font-size: 14px;
                 font-weight: 400; 
                 max-width: 50%;    
-                overflow: auto;                           
+                overflow: auto;      
+                
+                @media (min-width:1480px) and (max-width:1772px) {                     
+                    max-width: 60%;
+                }
+                @media (min-width:1271px) and (max-width:1480px) {                     
+                    max-width: 70%;
+                }
+                @media (min-width:1114px) and (max-width:1271px) {                     
+                    max-width: 80%;
+                }
+                @media  (max-width:1114px) {                     
+                    max-width: 90%;
+                }
             }
             .end {
                 align-self: flex-end;
@@ -60,7 +73,8 @@
             height: 170px;
             border-radius: 50%;
             border: 7px solid #f1f1f1;
-        }         
+        }        
+        
     } 
     .about-row-con {
         @include row-display;
@@ -98,4 +112,54 @@
             }
         }
     }         
+}
+
+@media (max-width:990px) {                     
+    .about-container {
+        @include column-display;
+
+        .about-row {
+            @include column-display;
+            width: auto;
+            align-self: center;
+            height: auto;                      
+
+            .about-desc {
+                position: unset;
+                transform: none;
+                align-self: center;
+                max-width: 70%;
+                height: auto;                                
+
+                .desc-h1 {
+                    align-self: center;                    
+                }
+                .desc-text {
+                    align-self: center;
+                }                
+            }
+            .left {
+                text-align: center;
+            }
+            .right {
+                text-align: center;
+            }            
+            .about-img {
+                position: unset;
+                transform: none;
+                align-self: center;
+                margin-bottom: 10px;
+            }
+        }
+        .reverse {            
+            flex-direction: column-reverse;
+        }
+        .about-row-con {
+            align-items: center;
+
+            .connector {
+                height: 73px;
+            }
+        }
+    }
 }
