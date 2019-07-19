@@ -219,6 +219,15 @@ body .col-12 {
   background: rgba(254, 209, 54, 0.5);
 }
 
+@media (min-width: 1051px) and (max-width: 1510px) {
+  .welcome {
+    margin-top: 15%;
+  }
+  .jumbo-button {
+    margin-bottom: 15%;
+  }
+}
+
 @media (max-width: 1050px) {
   .header .menu {
     display: flex;
