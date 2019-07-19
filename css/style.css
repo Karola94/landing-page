@@ -11,11 +11,24 @@ body {
 }
 
 body .jumbotron {
+  display: flex;
+  flex-direction: column;
   position: relative;
   background: url("../images/Background_Image.png");
-  min-height: 1000px;
   background-repeat: no-repeat;
-  background-size: 100%;
+  background-size: cover;
+}
+
+body .jumbotron::before {
+  content: '';
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #000;
+  opacity: 0.5;
 }
 
 body .services {
@@ -123,71 +136,60 @@ body .col-12 {
   width: 100%;
 }
 
-.tint {
-  position: absolute;
-  z-index: 1;
-  top: 0;
-  left: 0;
-  height: 100%;
-  background-color: #000;
-  opacity: 0.5;
-}
-
-.jumbo-container {
-  display: flex;
-  flex-direction: column;
-  position: absolute;
-  z-index: 2;
-  height: 100%;
-}
-
-.jumbo-container .header {
+.header {
   display: flex;
   flex-direction: row;
+  position: relative;
+  z-index: 2;
   justify-content: space-between;
   align-self: center;
   margin-top: 3%;
 }
 
-.jumbo-container .header .logo {
+.header .logo {
   color: #fed136;
   font-family: 'Pinyon Script', cursive;
   font-weight: 400;
   font-size: 46px;
 }
 
-.jumbo-container .header .menu {
+.header .menu {
   display: flex;
   flex-direction: row;
   align-items: center;
 }
 
-.jumbo-container .header .menu a {
+.header .menu a {
   color: #fff;
   font-weight: 500;
   font-size: 20px;
   padding: 0 20px;
+  width: 100%;
   text-decoration: none;
   line-height: 58px;
   transition: background-color 0.5s ease;
 }
 
-.jumbo-container .header .menu a:hover {
+.header .menu a:hover {
   background: rgba(0, 0, 0, 0.5);
   color: #d9d9d9;
   border-radius: 3%;
 }
 
-.jumbo-container .welcome {
+.welcome {
+  position: relative;
+  z-index: 2;
   color: white;
   font-family: 'Merriweather', serif;
   font-size: 40px;
   font-style: italic;
   text-align: center;
-  margin-top: 15%;
+  margin-top: 7%;
 }
 
-.jumbo-container .nice {
+.nice {
+  position: relative;
+  z-index: 2;
   color: white;
   font-size: 75px;
   font-weight: 700;
@@ -195,7 +197,9 @@ body .col-12 {
   margin-top: 3%;
 }
 
-.jumbo-container .jumbo-button {
+.jumbo-button {
+  position: relative;
+  z-index: 2;
   color: white;
   font-size: 18px;
   font-weight: 700;
@@ -207,11 +211,69 @@ body .col-12 {
   cursor: pointer;
   align-self: center;
   margin-top: 5%;
+  margin-bottom: 7%;
   transition: background-color 0.5s ease;
 }
 
-.jumbo-container .jumbo-button:hover {
+.jumbo-button:hover {
   background: rgba(254, 209, 54, 0.5);
+}
+
+@media (max-width: 1050px) {
+  .header .menu {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+  .welcome {
+    font-size: 2.5rem;
+  }
+  .nice {
+    font-size: 4rem;
+  }
+  .jumbo-button {
+    font-size: 1rem;
+    padding: 15px 30px;
+    margin-bottom: 10%;
+  }
+}
+
+@media (max-width: 830px) {
+  .header .menu a {
+    font-size: 15px;
+    padding: 0 10px;
+    line-height: 48px;
+  }
+  .welcome {
+    font-size: 1.5rem;
+  }
+  .nice {
+    font-size: 3rem;
+  }
+  .jumbo-button {
+    font-size: 0.8rem;
+    padding: 10px 20px;
+  }
+}
+
+@media (max-width: 630px) {
+  .nice {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 250px) {
+  .header {
+    display: flex;
+    flex-direction: column;
+  }
+  .header .logo {
+    align-self: center;
+    font-size: 36px;
+  }
+  .header .menu {
+    align-self: center;
+  }
 }
 
 .services-h1 {
@@ -364,7 +426,14 @@ body .col-12 {
   }
   .portfolio-row .portfolio-col {
     align-self: center;
-    margin-bottom: 20px;
+    margin-bottom: 40px;
+  }
+  .portfolio-row .portfolio-col:hover {
+    border-radius: 5px;
+  }
+  .portfolio-row .portfolio-col:hover img {
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
   }
 }
 

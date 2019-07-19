@@ -1,24 +1,10 @@
 @import "../mixins.scss";
 
-
-.tint {
-    position: absolute;
-    z-index: 1;
-    top: 0;
-    left: 0;    
-    height: 100%;
-    background-color: #000;
-    opacity: 0.5;
-}
-
-.jumbo-container {
-    @include column-display;
-    position: absolute;     
-    z-index: 2;
-    height: 100%;
-    
+  
     .header {
-        @include row-display;        
+        @include row-display;    
+        position: relative;
+        z-index: 2;    
         justify-content: space-between;                  
         align-self: center;
         margin-top: 3%;
@@ -38,6 +24,7 @@
                 font-weight: 500;
                 font-size: 20px;                
                 padding: 0 20px;
+                width: 100%;
                 text-decoration: none;
                 line-height: 58px;
                 transition: background-color 0.5s ease;
@@ -50,26 +37,32 @@
             }
         } 
     }
-    .welcome {        
+    .welcome {   
+        position: relative;
+        z-index: 2;     
         color: white;    
         font-family: 'Merriweather', serif;
         font-size: 40px;
         font-style: italic;
         text-align: center;
-        margin-top: 15%;     
+        margin-top: 7%;     
     }
-    .nice {        
+    .nice { 
+        position: relative;
+        z-index: 2;       
         color: white; 
         font-size: 75px;
         font-weight: 700;
         text-align: center;
         margin-top: 3%;
     }
-    .jumbo-button {        
+    .jumbo-button {   
+        position: relative;
+        z-index: 2;     
         color: white; 
         font-size: 18px;
         font-weight: 700;
-        padding: 25px 50px;
+        padding: 25px 50px;        
         text-align: center;
         max-width: 160px;
         background-color: #fed136;        
@@ -77,10 +70,73 @@
         cursor: pointer;
         align-self: center;
         margin-top: 5%;
+        margin-bottom: 7%;
         transition: background-color 0.5s ease;
     
         &:hover {
             background: rgba(254, 209, 54, 0.5);
         }
     }
-}
+
+    @media (max-width:1050px) {                     
+        .header {
+            .menu {
+                @include column-display;
+                text-align: center;;
+            }
+        }
+        .welcome {
+            font-size: 2.5rem;
+        }
+        .nice {
+            font-size: 4rem;
+        }
+        .jumbo-button {
+            font-size: 1rem;
+            padding: 15px 30px;
+            margin-bottom: 10%;
+        }
+    }
+
+    @media (max-width:830px) { 
+        .header {
+            .menu {
+                a {
+                    font-size: 15px;                
+                    padding: 0 10px;
+                    line-height: 48px;
+                }
+            }
+        }        
+        .welcome {
+            font-size: 1.5rem;
+        }
+        .nice {
+            font-size: 3rem;
+        }
+        .jumbo-button {
+            font-size: 0.8rem;
+            padding: 10px 20px;            
+        }
+    }
+
+    @media (max-width:630px) {
+        .nice {
+            font-size: 2rem;
+        }
+    }
+
+    @media (max-width:250px) {
+        .header {
+            @include column-display;
+
+            .logo {
+                align-self: center;
+                font-size: 36px;
+            }
+            .menu {
+                align-self: center;
+            }
+        }
+    }
+

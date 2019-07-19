@@ -1,21 +1,141 @@
-.tint { position: absolute; z-index: 1; top: 0; left: 0; height: 100%; background-color: #000; opacity: 0.5; }
+.header {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  z-index: 2;
+  justify-content: space-between;
+  align-self: center;
+  margin-top: 3%;
+}
 
-.jumbo-container { display: flex; flex-direction: column; position: absolute; z-index: 2; height: 100%; }
+.header .logo {
+  color: #fed136;
+  font-family: 'Pinyon Script', cursive;
+  font-weight: 400;
+  font-size: 46px;
+}
 
-.jumbo-container .header { display: flex; flex-direction: row; justify-content: space-between; align-self: center; margin-top: 3%; }
+.header .menu {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
 
-.jumbo-container .header .logo { color: #fed136; font-family: 'Pinyon Script', cursive; font-weight: 400; font-size: 46px; }
+.header .menu a {
+  color: #fff;
+  font-weight: 500;
+  font-size: 20px;
+  padding: 0 20px;
+  width: 100%;
+  text-decoration: none;
+  line-height: 58px;
+  transition: background-color 0.5s ease;
+}
 
-.jumbo-container .header .menu { display: flex; flex-direction: row; align-items: center; }
+.header .menu a:hover {
+  background: rgba(0, 0, 0, 0.5);
+  color: #d9d9d9;
+  border-radius: 3%;
+}
 
-.jumbo-container .header .menu a { color: #fff; font-weight: 500; font-size: 20px; padding: 0 20px; text-decoration: none; line-height: 58px; transition: background-color 0.5s ease; }
+.welcome {
+  position: relative;
+  z-index: 2;
+  color: white;
+  font-family: 'Merriweather', serif;
+  font-size: 40px;
+  font-style: italic;
+  text-align: center;
+  margin-top: 7%;
+}
 
-.jumbo-container .header .menu a:hover { background: rgba(0, 0, 0, 0.5); color: #d9d9d9; border-radius: 3%; }
+.nice {
+  position: relative;
+  z-index: 2;
+  color: white;
+  font-size: 75px;
+  font-weight: 700;
+  text-align: center;
+  margin-top: 3%;
+}
 
-.jumbo-container .welcome { color: white; font-family: 'Merriweather', serif; font-size: 40px; font-style: italic; text-align: center; margin-top: 15%; }
+.jumbo-button {
+  position: relative;
+  z-index: 2;
+  color: white;
+  font-size: 18px;
+  font-weight: 700;
+  padding: 25px 50px;
+  text-align: center;
+  max-width: 160px;
+  background-color: #fed136;
+  border-radius: 3%;
+  cursor: pointer;
+  align-self: center;
+  margin-top: 5%;
+  margin-bottom: 7%;
+  transition: background-color 0.5s ease;
+}
 
-.jumbo-container .nice { color: white; font-size: 75px; font-weight: 700; text-align: center; margin-top: 3%; }
+.jumbo-button:hover {
+  background: rgba(254, 209, 54, 0.5);
+}
 
-.jumbo-container .jumbo-button { color: white; font-size: 18px; font-weight: 700; padding: 25px 50px; text-align: center; max-width: 160px; background-color: #fed136; border-radius: 3%; cursor: pointer; align-self: center; margin-top: 5%; transition: background-color 0.5s ease; }
+@media (max-width: 1050px) {
+  .header .menu {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+  .welcome {
+    font-size: 2.5rem;
+  }
+  .nice {
+    font-size: 4rem;
+  }
+  .jumbo-button {
+    font-size: 1rem;
+    padding: 15px 30px;
+    margin-bottom: 10%;
+  }
+}
 
-.jumbo-container .jumbo-button:hover { background: rgba(254, 209, 54, 0.5); }
+@media (max-width: 830px) {
+  .header .menu a {
+    font-size: 15px;
+    padding: 0 10px;
+    line-height: 48px;
+  }
+  .welcome {
+    font-size: 1.5rem;
+  }
+  .nice {
+    font-size: 3rem;
+  }
+  .jumbo-button {
+    font-size: 0.8rem;
+    padding: 10px 20px;
+  }
+}
+
+@media (max-width: 630px) {
+  .nice {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 250px) {
+  .header {
+    display: flex;
+    flex-direction: column;
+  }
+  .header .logo {
+    align-self: center;
+    font-size: 36px;
+  }
+  .header .menu {
+    align-self: center;
+  }
+}
+
+/*# sourceMappingURL=jumbotron.css.map */

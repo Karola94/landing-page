@@ -10,12 +10,23 @@ body {
     width: 100%; 
     font-family: 'Montserrat', sans-serif;
     
-    .jumbotron {        
+    .jumbotron {   
+        @include column-display;     
         position: relative;
-        background: url('../images/Background_Image.png');
-        min-height: 1000px;
+        background: url('../images/Background_Image.png');        
         background-repeat: no-repeat;
-        background-size: 100%;
+        background-size: cover;
+    }
+    .jumbotron::before {
+        content: '';
+        position: absolute;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: #000;
+        opacity: 0.5;
     }
     .services {
         @include sections-settings;    
